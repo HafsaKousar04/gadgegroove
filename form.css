@@ -1,0 +1,118 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+ }
+
+ body {
+   font-family: Arial, sans-serif;
+ }
+
+ .main {
+   max-width: 1800px;
+   margin: 0 auto;
+   height: inherit;
+ }
+ .container-form{
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      background-image: url('./images/dark-grey-background-with-curved-panel-epu2kpmut5y3vv3e.webp'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      padding: 250px;
+    }
+
+    .form-section, .contact-section {
+      flex: 1;
+      min-width: 300px;
+      padding: 18px;
+    }
+
+    .form-section {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+    }
+
+    .form-section h2 {
+      margin-bottom: 20px;
+      color: rgb(216, 100, 18);
+    }
+
+    .form-section input,
+    .form-section textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: #333;
+      border: 1px solid #555;
+      color: white;
+      border-radius: 4px;
+    }
+
+    .form-section button {
+      background:rgb(216, 100, 18);
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .form-section button:hover{
+      background: transparent;
+      color: rgb(216, 100, 18);
+      border: 1px solid rgb(216, 100, 18);
+    }
+
+    .contact-section {
+      background-color: #fff;
+      color: #333;
+    height: 500px;
+    box-sizing: border-box;
+    }
+    .contact-heading{
+      color: rgb(216, 100, 18);
+    }
+     .contact-section  .contact-para {
+color: #555;
+padding: 20px;
+       }
+
+    /* .contact-section h2 {
+      margin-top: 0;
+    } */
+
+    /* .contact-section p {
+      margin: 10px 0;
+    } */
+
+    /* .contact-section strong {
+      display: block;
+      margin-top: 10px;
+    } */
+
+    /* Responsive: stack on smaller screens */
+    @media (max-width: 768px) {
+      .container-form {
+        flex-direction: column;
+        
+      }
+    
+    }
+    @media(max-width:900px){
+      .container-form{
+        padding: 50px;
+      }
+      /* .contact-section {
+        width: 700px;
+      } */
+        .contact-section{
+          width: 100%;
+        }
+    }
+    @media(max-width:400px){
+       .container-form{
+        padding: 20px;
+      }
+    }
